@@ -1,0 +1,187 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1466197984
+layout:
+  /header/:
+    -
+      - 'logo-4706 15'
+      - 'custom-8630 30'
+      - 'spacer-7866 55'
+  /navigation/:
+    -
+      - menu-2461
+  /showcase/:
+    -
+      - sample-2
+  /feature/:
+    -
+      - sample-3
+  /main/:
+    -
+      - custom-3029
+    -
+      - contentarray-7056
+  /subfeature/: {  }
+  /footer/:
+    -
+      - 'custom-7833 33.3'
+      - 'custom-2089 33.3'
+      - 'custom-5075 33.3'
+    -
+      - 'menu-5114 33.3'
+      - 'menu-2981 33.3'
+      - 'social-9776 33.3'
+  offcanvas:
+    -
+      - mobile-menu-2480
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  logo-4706:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://2016/06/logo-dwe-150x150.png'
+  custom-8630:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h1>CommTutos</h1>'
+    block:
+      id: site-title
+      class: g-flushed
+  sample-2:
+    title: Bienvenido
+    attributes:
+      description: "<h1 class=\"center\">Bienvenido</h1>\n<p style=\"text-align: left;\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel purus a nisi mollis consequat. Duis pulvinar ligula eu nulla faucibus volutpat. Nam gravida lobortis augue ac mollis. Fusce justo nisi, sodales ut justo sed, faucibus ultrices lectus. Donec auctor felis feugiat tellus congue, eu luctus massa ultrices. In id odio lacus. Integer finibus, lorem non congue eleifend, odio tortor viverra tellus, nec condimentum sapien tellus eget ante. Integer pretium sollicitudin pellentesque. Suspendisse neque diam, mattis sed consectetur a, scelerisque sit amet lorem. Maecenas suscipit egestas ligula, semper aliquet enim luctus quis.</p>"
+    block:
+      id: g-showcase
+  sample-3:
+    title: 'Key Features'
+    attributes:
+      headline: Categorías
+      description: '<p>Elige por categorías sobre los temas que más te interesen o quieras aprender</p>'
+      samples:
+        -
+          icon: 'fa fa-video-camera'
+          subtitle: ''
+          description: '<p>Busca sobre los tutoriales más nuevos para realizar animaciones con diferentes herramientas.</p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: Animaciones
+        -
+          icon: 'fa fa-code'
+          subtitle: ''
+          description: '<p>Aprende sobre las últimas y lenguajes de programación como: python, java, entre otros.</p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: Programación
+        -
+          icon: 'fa fa-image'
+          subtitle: ''
+          description: '<p>Aprende sobre las mejores técnicas  y herramientas para crear o mejorar tus recursos gráficos.</p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: Diseño
+  custom-3029:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h1 class="center">Últimos añadidos</h1>'
+  contentarray-7056:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        limit:
+          total: '4'
+          columns: '5'
+        sort:
+          orderby: comment_count
+        display:
+          text:
+            type: ''
+    block:
+      id: home-posts
+  custom-7833:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Páginas</h2>'
+    block:
+      id: label-footer
+  custom-2089:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Detalles</h2>'
+    block:
+      id: label-footer
+  custom-5075:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Redes Sociales</h2>'
+    block:
+      id: label-footer
+      class: center
+  menu-5114:
+    title: Páginas
+    attributes:
+      menu: principal
+    block:
+      id: pages-footer
+  menu-2981:
+    title: Detalles
+    attributes:
+      menu: secondary-menu
+    block:
+      id: details-footer
+  social-9776:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-twitter'
+          text: Twitter
+          link: 'http://twitter.com/rockettheme'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'http://facebook.com/rockettheme'
+          name: Facebook
+        -
+          icon: 'fa fa-google'
+          text: Google
+          link: 'http://plus.google.com/+rockettheme'
+          name: Google
+    block:
+      id: social-footer
+      variations: center
+  mobile-menu-2480:
+    title: 'Mobile Menu'

@@ -1,0 +1,152 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1466197984
+layout:
+  /header/:
+    -
+      - 'logo-4706 15'
+      - 'custom-8630 25'
+      - 'spacer-7866 30'
+      - 'login_buttons-2741 25'
+      - 'spacer-9260 5'
+  /navigation/:
+    -
+      - menu-2461
+  /showcase/:
+    -
+      - position-widget-4895
+  /feature/:
+    -
+      - 'position-position-4138 75'
+      - 'position-position-2272 25'
+  /main/: {  }
+  /subfeature/: {  }
+  /footer/:
+    -
+      - 'custom-7833 33.3'
+      - 'custom-2089 33.3'
+      - 'custom-5075 33.3'
+    -
+      - 'menu-5114 33.3'
+      - 'menu-2981 33.3'
+      - 'social-9776 33.3'
+  offcanvas:
+    -
+      - mobile-menu-2480
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  logo-4706:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://2016/06/logo-dwe-150x150.png'
+  custom-8630:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h1>CommTutos</h1>'
+    block:
+      id: site-title
+      class: g-flushed
+  login_buttons-2741:
+    title: 'Login Buttons'
+  position-widget-4895:
+    attributes:
+      widget: '{"type":"widget","widget":"search","title":"Buscar","options":{"widget":{"title":"Buscar"}}}'
+    block:
+      id: search-videotutorials
+  position-position-4138:
+    title: Videotutorials
+    attributes:
+      key: videotutorials-position
+    block:
+      id: videotutorials-content
+  position-position-2272:
+    title: Filters
+    attributes:
+      key: filters-position
+    block:
+      id: filters-panel
+      class: filters-panel
+  custom-7833:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Páginas</h2>'
+    block:
+      id: label-footer
+  custom-2089:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Detalles</h2>'
+    block:
+      id: label-footer
+  custom-5075:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Redes Sociales</h2>'
+    block:
+      id: label-footer
+      class: center
+  menu-5114:
+    title: Páginas
+    attributes:
+      menu: principal
+    block:
+      id: pages-footer
+  menu-2981:
+    title: Detalles
+    attributes:
+      menu: secondary-menu
+    block:
+      id: details-footer
+  social-9776:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-twitter'
+          text: Twitter
+          link: 'http://twitter.com/rockettheme'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'http://facebook.com/rockettheme'
+          name: Facebook
+        -
+          icon: 'fa fa-google'
+          text: Google
+          link: 'http://plus.google.com/+rockettheme'
+          name: Google
+    block:
+      id: social-footer
+      variations: center
+  mobile-menu-2480:
+    title: 'Mobile Menu'

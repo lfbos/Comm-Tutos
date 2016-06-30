@@ -1,0 +1,9 @@
+preset: preset2
+showcase:
+  background: '#ffffff'
+  text-color: 'rgba(33, 33, 33, 0.87)'
+feature:
+  background: '#e7f7fe'
+footer:
+  background: '#01579b'
+  text-color: '#ffffff'

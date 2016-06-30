@@ -1,0 +1,27 @@
+ordering:
+  inicio: ''
+  destacados: ''
+  tutoriales: ''
+  videotutoriales: ''
+  foro: ''
+items:
+  inicio:
+    enabled: '1'
+    id: '21'
+    type: custom
+    hash: ''
+    dropdown_dir: right
+    dropdown_hide: ''
+    width: auto
+  destacados:
+    id: 38
+    type: post_type
+  tutoriales:
+    id: 37
+    type: post_type
+  videotutoriales:
+    id: 36
+    type: post_type
+  foro:
+    id: 35
+    type: post_type

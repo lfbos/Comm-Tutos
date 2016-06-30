@@ -1,0 +1,13 @@
+context: {  }
+menu:
+  principal:
+    39: true
+post:
+  page:
+    29: true
+taxonomy:
+  category:
+    4: true
+archive:
+  category:
+    4: true

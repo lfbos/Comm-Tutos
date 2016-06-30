@@ -1,0 +1,4 @@
+enabled: '1'
+content: 'Creado por <a href="" title="Luis Boscan" class="g-powered-by">Luis Boscan</a>'
+css:
+  class: branding

@@ -1,0 +1,117 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1466197984
+layout:
+  /header/:
+    -
+      - 'logo-4734 15'
+      - 'custom-6377 25'
+      - 'spacer-1355 30'
+      - 'login_buttons-7930 25'
+      - 'spacer-6539 5'
+  /navigation/:
+    -
+      - menu-1096
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-8511
+    -
+      - system-content-3001
+  /footer/:
+    -
+      - 'custom-3402 33.3'
+      - 'custom-9586 33.3'
+      - 'custom-2267 33.3'
+    -
+      - 'menu-9140 33.3'
+      - 'menu-7347 33.3'
+      - 'social-8716 33.3'
+  offcanvas:
+    -
+      - mobile-menu-4918
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  logo-4734:
+    attributes:
+      image: 'gantry-media://2016/06/logo-dwe-150x150.png'
+  custom-6377:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h1>CommTutos</h1>'
+    block:
+      id: site-title
+      class: g-flushed
+  login_buttons-7930:
+    title: 'Login Buttons'
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  custom-3402:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Páginas</h2>'
+    block:
+      id: label-footer
+  custom-9586:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Detalles</h2>'
+    block:
+      id: label-footer
+  custom-2267:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2 style="color: rgba(255,255,255,0.87)">Redes Sociales</h2>'
+    block:
+      id: label-footer
+      class: center
+  menu-9140:
+    title: Páginas
+    block:
+      id: pages-footer
+  menu-7347:
+    title: Detalles
+    attributes:
+      menu: secondary-menu
+    block:
+      id: details-footer
+  social-8716:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-twitter'
+          text: Twitter
+          link: 'http://twitter.com/LFBos19'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'https://www.facebook.com/luis.boscannava'
+          name: Facebook
+        -
+          icon: 'fa fa-google'
+          text: Google
+          link: 'https://plus.google.com/+LuisBoscan19'
+          name: Google
+    block:
+      id: social-footer
+      variations: center

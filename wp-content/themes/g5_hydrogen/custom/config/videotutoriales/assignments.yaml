@@ -1,0 +1,15 @@
+context: {  }
+menu:
+  principal:
+    40: true
+post:
+  post-terms:
+    category-5: true
+  page:
+    31: true
+taxonomy:
+  category:
+    5: true
+archive:
+  category:
+    5: true

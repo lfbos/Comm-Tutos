@@ -1,0 +1,12 @@
+post:
+  display:
+    date:
+      format: 'D, d F'
+    author:
+      enabled: ''
+    comments:
+      enabled: ''
+    text:
+      type: ''
+    read_more:
+      enabled: ''

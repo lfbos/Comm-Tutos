@@ -1,0 +1,6 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    <a id="register-button" href="{{gantry.login_buttons.getRegisterURL()}}">Registrarse</a></br style="margin:0; padding:0;">
+    <a id="login-button" href="{{gantry.login_buttons.getLoginURL()}}">Iniciar Sesión</a>
+{% endblock %}

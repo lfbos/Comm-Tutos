@@ -1,0 +1,7 @@
+name: foro
+timestamp: 1466901551
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1466197984
+positions: {  }

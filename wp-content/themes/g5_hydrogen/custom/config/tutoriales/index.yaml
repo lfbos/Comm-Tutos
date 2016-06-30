@@ -1,0 +1,9 @@
+name: tutoriales
+timestamp: 1467254741
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1466197984
+positions:
+  tutorials-position: Tutorials
+  filters-position: Filters

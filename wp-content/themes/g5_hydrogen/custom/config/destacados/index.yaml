@@ -1,0 +1,9 @@
+name: destacados
+timestamp: 1467254653
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1466197984
+positions:
+  featured-position: Featured
+  filters-position: Filters

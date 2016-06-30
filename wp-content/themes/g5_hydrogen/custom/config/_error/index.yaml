@@ -1,0 +1,8 @@
+name: _error
+timestamp: 1466197984
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: _error
+  timestamp: 1466197984
+positions:
+  footer: Footer
